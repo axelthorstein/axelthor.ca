@@ -1,0 +1,107 @@
+<div class="hexagon"></div>
+
+.hexagon {
+  position: relative;
+  width: 300px; 
+  height: 173.21px;
+  background-color: #f9f4ff;
+  margin: 86.60px 0;
+  border-left: dotted 5px #333333;
+  border-right: dotted 5px #333333;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 212.13px;
+  height: 212.13px;
+  -webkit-transform: scaleY(0.5774) rotate(-45deg);
+  -ms-transform: scaleY(0.5774) rotate(-45deg);
+  transform: scaleY(0.5774) rotate(-45deg);
+  background-color: inherit;
+  left: 38.9340px;
+}
+
+.hexagon:before {
+  top: -106.0660px;
+  border-top: dotted 7.0711px #333333;
+  border-right: dotted 7.0711px #333333;
+}
+
+.hexagon:after {
+  bottom: -106.0660px;
+  border-bottom: dotted 7.0711px #333333;
+  border-left: dotted 7.0711px #333333;
+}
+
+
+
+body {
+    background:#ccc;
+}
+
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+    <polygon fill="none" points="276.1128234863281,134 213.05642700195312,243.2169189453125 86.94358825683594,243.2169189453125 23.887176513671875,134 86.94358825683594,24.78308868408203 213.05642700195312,24.78308868408203 276.1128234863281,134 " stroke="#fff" stroke-width="15" />
+</svg>
+
+
+
+
+
+
+
+<div class="hex">
+    <div class="hex inner">
+        <div class="hex inner2"></div>
+    </div>
+</div>
+
+.hex {
+    margin-top: 70px;
+    width: 208px;
+    height: 120px;
+    background: #6C6;
+    position: relative;
+}
+.hex:before, .hex:after {
+    content:"";
+    border-left: 104px solid transparent;
+    border-right: 104px solid transparent;
+    position: absolute;
+}
+.hex:before {
+    top: -59px;
+    border-bottom: 60px solid #6C6;
+}
+.hex:after {
+    bottom: -59px;
+    border-top: 60px solid #6C6;
+}
+.hex.inner {
+    background-color:blue;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index:1;
+}
+.hex.inner:before {
+    border-bottom: 60px solid blue;
+}
+.hex.inner:after {
+    border-top: 60px solid blue;
+}
+.hex.inner2 {
+    background-color:red;
+    -webkit-transform: scale(.8, .8);
+    -moz-transform: scale(.8, .8);
+    transform: scale(.8, .8);
+    z-index:2;
+}
+.hex.inner2:before {
+    border-bottom: 60px solid red;
+}
+.hex.inner2:after {
+    border-top: 60px solid red;
+}
