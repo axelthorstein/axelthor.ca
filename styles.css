@@ -1,3 +1,53 @@
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   background: #fffcfb;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: auto;
+    width: 50%;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+  float: left;
+  vertical-align: bottom;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: #555;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 24px;
+}
+
+/*Nav img logo*/
+ul.topnav li a img {
+    padding: 0px;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {color: #ff5d5d;}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+
+
+
+/*Extras*/
+
 <div class="hexagon"></div>
 
 .hexagon {
@@ -34,12 +84,6 @@
   bottom: -106.0660px;
   border-bottom: dotted 7.0711px #333333;
   border-left: dotted 7.0711px #333333;
-}
-
-
-
-body {
-    background:#ccc;
 }
 
 <svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
