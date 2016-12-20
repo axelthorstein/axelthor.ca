@@ -1,20 +1,49 @@
-body {
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   font-weight: 300;
-   background: #fff;
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+html, body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 500;
+    background-image: url("../images/grid.svg");
+    background-repeat: repeat;
+    height: 99%;
+    margin: 0;
 }
 
-.center {
-    width: 70%;
-    margin: auto;
+/* Content Wrapper */
+
+.content {
+  padding: 20px;
+  min-height: 100%;
+  margin: 0 auto -50px;
 }
 
-h1 {
-  color: #337ab7;
-  width: 70%;
-  margin: auto;
-  text-align: center;
+h3 {
+  color: #2a507f;
+  text-align: left;
+  padding-left: 5%;
 
+}
+
+h2 {
+  color: #2a507f;
+  line-height: 1.75em;
+  font-size: 1em;
+}
+
+p {
+  color: #2a507f;
+  line-height: 1.75em;
+  font-size: 1em;
+}
+
+p.title-description {
+  padding-left: 7rem;
+}
+
+.heading {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .paragraph {
@@ -23,44 +52,130 @@ h1 {
   width: 75%;
 }
 
-.grid {
-  z-index: -1; 
-  position: absolute;
+.space {
+  width: 33%;
+  float: right;
 }
 
-.icon-size {
+
+/*----------------------------------------------------*/
+
+/* Title name */
+
+.title {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.title h3 a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.title h3 a:hover { 
+  color: #ff5d5d;
+}
+
+/*----------------------------------------------------*/
+
+/* SVG Icon */
+
+#hexagon {
+  position: relative;
   height: 90px;
   width: 90px;
-  
+  margin: 0 auto;
 }
 
-.icon-expand-link .contract {
-  display: none;
+#hexagon img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  transition-delay: 0.1s;
 }
 
-.icon-expand-link:hover .expand {
-  display: none;
+#hexagon img.transparent {
+  opacity: 0;
 }
 
-.icon-expand-link:hover .contract {
-  display: block;
+#hexagon img a {
+  padding: 0px;
+}
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+}
+
+#hexagon_onclick {
+  cursor: pointer;
+}
+
+.hexagon-size {
+  height: 90px;
+  width: 90px;
+}
+
+/*----------------------------------------------------*/
+
+/* SVG Icon Split */
+
+#hexagon img.outline-slide {
+  -webkit-transition: transform 0.4s ease-in-out;
+  -moz-transition: transform 0.4s ease-in-out;
+  -o-transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+}
+/*matrix(1.1, 0, 0, 1.1, -100px, 120px);*/
+.slide-out-left {
+  -webkit-transform: translate(-175px, 50px) rotate(-60deg) scale(0.9);
+  -moz-transform: translate(-175px, 50px) rotate(-60deg) scale(0.9);
+  -o-transform: translate(-175px, 50px) rotate(-60deg) scale(0.9);
+  transform: translate(-175px, 50px) rotate(-60deg) scale(0.9);
+}
+.slide-out-right {
+  -webkit-transform: translate(175px, 50px) rotate(60deg) scale(0.9);
+  -moz-transform: translate(175px, 50px) rotate(60deg) scale(0.9);
+  -o-transform: translate(175px, 50px) rotate(60deg) scale(0.9);
+  transform: translate(175px, 50px) rotate(60deg) scale(0.9);
+}
+
+/*----------------------------------------------------*/
+
+/* Navigation Bar */
+
+.logo {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+    width: 33%;
+    margin: 0 auto;
 }
 
 .nav-item {
   padding-top: 45px;
 }
 
+ul.li {
+  padding: 0px;
+}
+
 ul.topnav {
     list-style-type: none;
+    padding: 0;
+    display: table;
     width: 100%;
-    display: inline-block;
-    padding-left: 25%;
-    padding-top: 5%;
 }
 
 /* Float the list items side by side */
 ul.topnav li {
-  float: left;
+  display: table-cell;
 }
 
 /* Style the links inside the list items */
@@ -76,4 +191,112 @@ ul.topnav li a {
 /* Change background color of links on hover */
 ul.topnav li a:hover { 
   color: #ff5d5d;
+}
+
+/*----------------------------------------------------*/
+
+/* Sticky Footer */
+
+.footer,
+.push {
+  height: 50px;
+}
+
+/*----------------------------------------------------*/
+
+/* Social Media Icons Footer */
+
+ul {
+    padding:0;
+    list-style: none;
+}
+
+/* Set to 276px because that is the total width of the icons. */
+.footer-social-icons {
+    width: 290px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #337ab7;
+}
+ul.social-icons {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+/* On hover turn icon white */
+.social-icons a:hover {
+    color: #fff;
+}
+
+/* For each icon on hover turn background a different colour */
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-github {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+}
+.fa-github:hover {
+    background-color: #333333;
+}
+.fa-instagram {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+}
+.fa-instagram:hover {
+    background-color: #D62982;
+}
+.fa-soundcloud {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+}
+.fa-soundcloud:hover {
+    background-color: #FF5500;
+}
+.fa-linkedin {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: transparent;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
 }
