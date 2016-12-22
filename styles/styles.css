@@ -5,6 +5,7 @@ html, body {
     font-weight: 500;
     background-image: url("../images/grid.svg");
     background-repeat: repeat;
+    background-color: #FFF;
     height: 99%;
     margin: 0;
 }
@@ -143,6 +144,37 @@ p.title-description {
   transform: translate(175px, 50px) rotate(60deg) scale(0.9);
 }
 
+
+/*Lit test*/
+
+.slide-out {
+}
+
+.slide-out-right {
+  -webkit-transform: translate(175px, 0px) rotate(60deg) scale(0.9);
+  -moz-transform: translate(175px, 0px) rotate(60deg) scale(0.9);
+  -o-transform: translate(175px, 0px) rotate(60deg) scale(0.9);
+  transform: translate(175px, 0px) rotate(60deg) scale(0.9);
+}
+.slide-out-left {
+  -webkit-transform: translate(-175px, 0px) rotate(60deg) scale(0.9);
+  -moz-transform: translate(-175px, 0px) rotate(60deg) scale(0.9);
+  -o-transform: translate(-175px, 0px) rotate(60deg) scale(0.9);
+  transform: translate(-175px, 0px) rotate(60deg) scale(0.9);
+}
+.slide-out-right-up {
+  -webkit-transform: translate(175px, -150px) rotate(60deg) scale(0.9);
+  -moz-transform: translate(175px, -150px) rotate(60deg) scale(0.9);
+  -o-transform: translate(175px, -150px) rotate(60deg) scale(0.9);
+  transform: translate(175px, -150px) rotate(60deg) scale(0.9);
+}
+.slide-out-left-up {
+  -webkit-transform: translate(-175px, -150px) rotate(60deg) scale(0.9);
+  -moz-transform: translate(-175px, -150px) rotate(60deg) scale(0.9);
+  -o-transform: translate(-175px, -150px) rotate(60deg) scale(0.9);
+  transform: translate(-175px, -150px) rotate(60deg) scale(0.9);
+}
+
 /*----------------------------------------------------*/
 
 /* Navigation Bar */
@@ -159,7 +191,7 @@ p.title-description {
 }
 
 .nav-item {
-  padding-top: 45px;
+  /*padding-top: 45px;*/
 }
 
 ul.li {
