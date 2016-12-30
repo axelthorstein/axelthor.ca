@@ -25,6 +25,7 @@ $(document).ready(function() {
         slideInOut("#hexagon img.outline-slide.0", "#hexagon img.outline-slide.1", 0, 1);
         if ($("#hexagon img.outline-slide.1").hasClass("slide-out-left") || $("#hexagon img.top").hasClass("transparent")) {
             $("#home-bio h2").toggleClass("transparent");
+            $("#logo-title img").toggleClass("transparent");
         };
     });
 
@@ -39,6 +40,7 @@ $(document).ready(function() {
         slideInOut("#hexagon img.outline-slide.2", "#hexagon img.outline-slide.3", 2, 3);
         if ($("#hexagon img.outline-slide.3").hasClass("slide-out-left") || $("#hexagon img.top").hasClass("transparent")) {
             $("#home-bio h2").toggleClass("transparent");
+            $("#logo-title img").toggleClass("transparent");
         };
     });
 });
