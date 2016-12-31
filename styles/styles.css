@@ -209,10 +209,10 @@ b {
   transform: translate(-12vw, 9.2vh) scale(0.79);
 }
 .slide-out-right {
-  -webkit-transform: translate(12vw, 9.2vh) rotate(-60deg) scale(0.79);
-  -moz-transform: translate(12vw, 9.2vh) rotate(-60deg) scale(0.79);
-  -o-transform: translate(12vw, 9.2vh) rotate(-60deg) scale(0.79);
-  transform: translate(12vw, 9.2vh) rotate(-60deg) scale(0.79);
+  -webkit-transform: translate(12vw, 9.2vh) scale(0.79);
+  -moz-transform: translate(12vw, 9.2vh) scale(0.79);
+  -o-transform: translate(12vw, 9.2vh) scale(0.79);
+  transform: translate(12vw, 9.2vh) scale(0.79);
 }
 .music-title {
   -webkit-transform: rotate(-60deg);
