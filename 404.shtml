@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Not Found</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  
+</head>
+
+<body>
+<div class="container text-center" id="error">
+ <div class="nav">
+        <ul id="nav_onclick" class="topnav">
+          <li class="logo">
+            <div id="hexagon">
+              <img class="bottom hexagon-size base transparent" src="/images/poly2.svg" />
+              <img class="top hexagon-size base" src="/images/poly1.svg" />
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="title">
+          <h3><a href="/" class="title-name">Axel Thor</a></h3>
+      </div>
+      <div id="home-bio">
+        <h2> Opps! It looks like you're a little lost, just click my name to return home. :)</h2>
+      </div>
+  <footer class="footer">
+    <div class="footer-social-icons">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/axelthors" target='_blank' class="social-icon"> <i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://github.com/axelthorstein" target='_blank' class="social-icon"> <i class="fa fa-github fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/axelthorr/" target='_blank' class="social-icon"> <i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://soundcloud.com/axel-stein" target='_blank' class="social-icon"> <i class="fa fa-soundcloud fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/axelthor" target='_blank' class="social-icon"> <i class="fa fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </div>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "/scripts/methods.js";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
+</div>
+
+</body>
+</html>

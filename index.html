@@ -5,45 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>axel thor</title>
-    <meta name="description" content="axel thor portfolio">
+    <title>Axel Thor</title>
+    <meta name="description" content="Axel Thor portfolio">
   	<meta name="author" content="Axel Thor">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+    <link rel="icon" href="http://www.axelthor.ca/favicon.ico?v=2" />
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
-    <link rel="icon" type="image/ico" href="images/poly1.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
   </head>
 
   <body>
   	<div class="content">
 		<div>
-			
-		    <div class="nav">
+			<div class="nav">
 				<ul id="nav_onclick" class="topnav">
 					<li><a href="#development" class="development nav-item">develop</a></li>
 					<li class="logo">
 						<div id="hexagon">
-							<img class="bottom hexagon-size base transparent" src="images/poly2.svg" />
-							<img class="top hexagon-size base" src="images/poly1.svg" />
-							<a href="file:///Users/axelthorstein/Google%20Drive/Development/Portfolio%20Website//pages/resume.html" class="not-active 0"><img class="outline-slide 0 work hexagon-size transparent" src="images/poly_resume.svg" /></a>
-							<a href="file:///Users/axelthorstein/Google%20Drive/Development/Portfolio%20Website//pages/work.html" class="not-active 1"><img class="outline-slide 1 work hexagon-size transparent" src="images/poly_work.svg" /></a>
-							<a href="file:///Users/axelthorstein/Google%20Drive/Development/Portfolio%20Website//pages/photos.html" class="not-active 3"><img class="outline-slide 3 art hexagon-size transparent" src="images/poly_contact.svg" /></a>
-							<a href="file:///Users/axelthorstein/Google%20Drive/Development/Portfolio%20Website//pages/music.html" class="not-active 2"><img class="outline-slide 2 art hexagon-size transparent" src="images/icon.svg" /></a>
+							<img class="bottom hexagon-size base transparent" src="/images/poly2.svg" />
+							<img class="top hexagon-size base" src="/images/poly1.svg" />
+							<a href="/pages/resume.html" class="not-active 0"><img class="outline-slide 0 work hexagon-size transparent" src="/images/poly_resume.svg" /></a>
+							<a href="/pages/work.html" class="not-active 1"><img class="outline-slide 1 work hexagon-size transparent" src="/images/poly_work.svg" /></a>
+							<a href="/pages/photos.html" class="not-active 3"><img class="outline-slide 3 art hexagon-size transparent" src="/images/poly_photos.svg" /></a>
+							<a href="/pages/music.html" class="not-active 2"><img class="outline-slide 2 art hexagon-size transparent" src="/images/poly_music.svg" /></a>
+							<a href="/pages/poetry.html" class="not-active 4"><img class="outline-slide 4 art hexagon-size transparent" src="/images/poly_poetry.svg" /></a>
+							<a href="/pages/contact.html" class="not-active 5"><img class="outline-slide 5 art hexagon-size transparent" src="/images/poly_contact.svg" /></a>
 						</div>
 					</li>
 					<li><a href="#creative" class="creative nav-item" >creative</a></li>
 				</ul>
 			</div>
 			<div class="title">
-			  	<h3><a href="file:///Users/axelthorstein/Google%20Drive/Development/Portfolio%20Website/index.html" class="title-name">Axel Thor</a></h3>
-			  	<p>developer, thinker, maker</p>
+			  	<h3><a href="/" class="title-name">Axel Thor</a></h3>
 		  	</div>
 
 			<div id="home-bio">
 				<h2> I’m Axel Thor, a multi-disciplinary developer, designer, musician, and occasional poet. </h2>
-
 			</div>
 		</div>
 		<div class="push"></div>
@@ -63,6 +68,17 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="scripts/methods.js"></script>
+    <script type="text/javascript">
+		function downloadJSAtOnload() {
+		var element = document.createElement("script");
+		element.src = "/scripts/methods.js";
+		document.body.appendChild(element);
+		}
+		if (window.addEventListener)
+		window.addEventListener("load", downloadJSAtOnload, false);
+		else if (window.attachEvent)
+		window.attachEvent("onload", downloadJSAtOnload);
+		else window.onload = downloadJSAtOnload;
+	</script>
   </body>
 </html>
