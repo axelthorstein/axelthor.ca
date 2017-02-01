@@ -1,0 +1,86 @@
+
+
+
+
+
+
+
+
+
+Troy is a name usually associated with people who 
+have very determined personalities and tend to enjoy 
+quality time with few people rather than with a large groups. 
+Troy's usually are extremely easy to get along with.
+
+Luise is a name usually associated with people who 
+are very good at expressing themselves and are capable of 
+leaving things unsaid. Luise's usually are able to bring 
+peace into other peoples lives.
+
+Aaron is a name usually associated with people who are 
+typically not interested in being normal and do not 
+actively seek attention from others. Aaron's usually 
+find great joy in small things.
+
+
+
+
+
+
+SELECT name 
+FROM Names 
+WHERE gender='M' 
+AND country='NA' 
+AND attributes='DEG';
+
+
+Dustin is a name usually associated with people who have 
+a very logical response to the world around them and make 
+great partners and long lasting friends. Dustin's usually 
+are the first person to try something others are scared to try.
+
+Larry is a name usually associated with people who are 
+able to communicate very well with the people around them, 
+which usually brings them success in their career and do not 
+reveal their best qualities when they first meet new people. 
+Larry's usually love to try new things.
+
+Theodore is a name usually associated with people who are 
+quick thinkers and are very busy thinkers. Theodore's usually 
+are great entrepreneuers which bring great 
+change to the people around them.
+
+
+
+
+
+
+
+create_bio(['Donald Don', 'Larry', 'Theodore'], 'DEG')
+
+
+Donald is a name usually associated with people who are able to 
+communicate very well with the people around them, which usually 
+brings them success in their career and do not reveal their best 
+qualities when they first meet new people. Donald's usually are 
+great entrepreneuers which bring great change to the people 
+around them. Donald is usually shorted to Don by friends and family.
+
+Larry is a name usually associated with people who are quick 
+thinkers and are very busy thinkers. Larry's usually are the 
+first person to try something others are scared to try.
+
+Theodore is a name usually associated with people who have a 
+very logical response to the world around them and make great 
+partners and long lasting friends. Theodore's usually 
+love to try new things.
+
+
+
+
+
+
+
+
+
+

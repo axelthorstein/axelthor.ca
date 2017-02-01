@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Name Generator</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="name_generator.css">
+  <link rel="stylesheet" type="text/css" href="../../styles/styles.css">
+  
+</head>
+
+<body>
+    <div class="content">
+        <div>
+            <div class="nav">
+                <ul id="nav_onclick" class="topnav">
+                    <li><a href="#development" class="development nav-item">develop</a></li>
+                    <li class="logo">
+                        <div id="hexagon">
+                            <img class="bottom hexagon-size base transparent" src="../../images/poly2.svg" />
+                            <img class="top hexagon-size base" src="../../images/poly1.svg" />
+                            <a href="../../pages/resume.html" class="not-active 0"><img class="outline-slide 0 work hexagon-size transparent" src="../../images/poly_resume.svg" /></a>
+                            <a href="../../pages/work.html" class="not-active 1"><img class="outline-slide 1 work hexagon-size transparent" src="../../images/poly_work.svg" /></a>
+                            <a href="../../pages/photos.html" class="not-active 3"><img class="outline-slide 3 art hexagon-size transparent" src="../../images/poly_photos.svg" /></a>
+                            <a href="../../pages/music.html" class="not-active 2"><img class="outline-slide 2 art hexagon-size transparent" src="../../images/poly_music.svg" /></a>
+                            <a href="../../pages/poetry.html" class="not-active 4"><img class="outline-slide 4 art hexagon-size transparent" src="../../images/poly_poetry.svg" /></a>
+                            <a href="../../pages/contact.html" class="not-active 5"><img class="outline-slide 5 art hexagon-size transparent" src="../../images/poly_contact.svg" /></a>
+                        </div>
+                    </li>
+                    <li><a href="#creative" class="creative nav-item" >creative</a></li>
+                </ul>
+            </div>
+      <div class="title">
+          <h3><a href="/" class="title-name">Axel Thor</a></h3>
+      </div>
+      <div class="content-container">
+            <form name="attributeForm">
+                <div class="radio-containers">
+                    
+                      <div class="button-container">
+                        <h4> Select your gender:</h4>
+                            <label class="rad">
+                                <p class="r">Male</p>
+                              <input type="radio" name="gender" value="M" checked>
+                              <i></i> 
+                            </label>
+                            <label class="rad">
+                                <p class="r">Female</p>
+                              <input type="radio" name="gender" value="F">
+                              <i></i>
+                            </label>
+                      </div>
+                      <div class="button-container">
+                        <h4> Select your country:</h4>
+                            <label class="rad">
+                               <p class="r">North America</p>
+                              <input type="radio" name="country" value="NA" checked>
+                              <i></i> 
+                            </label>
+                            <label class="rad">
+                                <p class="r">Iceland</p>
+                              <input type="radio" name="country" value="IS">
+                              <i></i>
+                            </label>
+                      </div>
+                </div>
+              
+              
+              <div class="project-container">
+                    <h4> Select at least three attributes that describe you most: </h4>
+                    <label class="ckb">
+                        <p class="r">Rebellious</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="A" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Low-key</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="B" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Simple</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="C" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Clever</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="D" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Introverted</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="E" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Extroverted</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="F" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Bold</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="G" checked>
+                        <i></i> 
+                    </label>
+                    <label class="ckb">
+                        <p class="r">Funny</p>
+                        <input class="messageCheckbox" type="checkbox" name="attribute[]" id="attribute" value="H" checked>
+                        <i></i> 
+                    </label>
+              </div>
+              <input class="messageCheckbox" type="button" value="Generate Bios" onClick="printBios()">
+
+            </form>
+            <div class="project-container transparent" id="container1"> 
+                <p class="bios" id="message1"></p>
+            </div>
+            <div class="project-container transparent" id="container2"> 
+                <p class="bios" id="message2"></p>
+            </div>
+            <div class="project-container transparent" id="container3"> 
+                <p class="bios" id="message3"></p>
+            </div>
+      </div>
+  <footer class="footer">
+    <div class="footer-social-icons">
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/axelthors" target='_blank' class="social-icon"> <i class="fa fa-facebook fa-2x"></i></a></li>
+            <li><a href="https://github.com/axelthorstein" target='_blank' class="social-icon"> <i class="fa fa-github fa-2x"></i></a></li>
+            <li><a href="https://www.instagram.com/axelthorr/" target='_blank' class="social-icon"> <i class="fa fa-instagram fa-2x"></i></a></li>
+            <li><a href="https://soundcloud.com/axel-stein" target='_blank' class="social-icon"> <i class="fa fa-soundcloud fa-2x"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/axelthor" target='_blank' class="social-icon"> <i class="fa fa-linkedin fa-2x"></i></a></li>
+        </ul>
+    </div>
+  </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="create_bio.js"></script>
+    <script>
+        window.onbeforeunload = function() {
+            sessionStorage.setItem("name", $('#inputName').val());
+        }
+    </script>
+    <script type="text/javascript">
+    function downloadJSAtOnload() {
+    var element = document.createElement("script");
+    element.src = "/scripts/methods.js";
+    document.body.appendChild(element);
+    }
+    if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+    else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+    else window.onload = downloadJSAtOnload;
+  </script>
+</div>
+
+</body>
+</html>
