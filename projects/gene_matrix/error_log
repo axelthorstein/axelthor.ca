@@ -1,0 +1,1 @@
+[01-Feb-2017 16:41:22 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/axelthorstein/public_html/projects/gene_matrix/upload.php on line 91
